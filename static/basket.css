@@ -1,0 +1,127 @@
+/* === Global Page Styling === */
+body {
+  margin: 0; /* Remove default margin */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  background-color: #fff; /* White background */
+}
+
+/* === Page Container === */
+.container {
+  max-width: 1200px; /* Max width for content */
+  margin: 40px auto; /* Center it with vertical spacing */
+  padding: 0 20px; /* Horizontal padding */
+}
+
+/* === Page Title === */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* === Product Grid Layout === */
+.grid {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to next row */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Spacing between items */
+}
+
+/* === Individual Product Card === */
+.card {
+  background-color: white;
+  border-radius: 10px; /* Rounded corners */
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); optional subtle shadow */
+  transition: transform 0.2s; /* Smooth scaling on hover */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center horizontally */
+  padding: 10px;
+  overflow: hidden;
+  max-width: 280px; /* Keep a compact layout */
+  margin: 0 auto; /* Center card if it's alone */
+}
+
+/* === Product Image Inside Card === */
+.card img {
+  height: 180px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain; /* Maintain image aspect ratio */
+  display: block;
+}
+
+/* === Card Hover Effect === */
+.card:hover {
+  transform: scale(1.2); /* Zoom in slightly on hover */
+}
+
+/* === Text Container Inside Card === */
+.card-body {
+  padding: 15px;
+}
+
+/* === Product Name === */
+.product-name {
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+}
+
+/* === Product Price === */
+.product-price {
+  font-weight: bold;
+  color: #2c3e50; /* Dark blue-gray */
+}
+
+/* === Footer Section === */
+.footer {
+  max-width: 800px;
+  margin: 30px auto 40px;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* === Checkout Button === */
+.checkout-btn {
+  background-color: #007bff; /* Bootstrap blue */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 2.5em 0 1em 0;
+}
+
+/* === Basket Summary Box === */
+.basket-summary {
+  margin: 40px auto;
+  padding: 20px 0;
+  max-width: 400px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+/* === Total Price Text === */
+.basket-summary .total {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* === Hover Effect on Checkout Button === */
+.checkout-btn:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
+/* === Generic Total Class === */
+.total {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
